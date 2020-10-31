@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Aut<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "Aut",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CamposVacios<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "CamposVacios",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Cobrar<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "Cobrar",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DCorrecto<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "DCorrecto",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ErrorAuten<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "ErrorAuten",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HistCorrecto<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "HistCorrecto",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InHistMed<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "InHistMed",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NoAdeuda<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "NoAdeuda",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NuevoPaciente<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "NuevoPaciente",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NuevoTurno<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "NuevoTurno",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PCorrecto<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "PCorrecto",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Pagado<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "Pagado",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrincipalAdmin<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "PrincipalAdmin",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrincipalDoctor<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "PrincipalDoctor",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Recetar<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "Recetar",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SelUsuario<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "SelUsuario",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TCorrecto<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "TCorrecto",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerMisPacientes<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "VerMisPacientes",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerMisTurnos<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "VerMisTurnos",
+            "projectName": "TP-Software-RC33_1710af9e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-esAlergic<TP-Software-RC33_1710af9e>",
+            "request": "launch",
+            "mainClass": "esAlergic",
+            "projectName": "TP-Software-RC33_1710af9e"
+        }
+    ]
+}
