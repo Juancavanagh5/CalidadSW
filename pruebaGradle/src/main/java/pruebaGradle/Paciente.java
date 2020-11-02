@@ -6,7 +6,7 @@ public class Paciente {
     private String nombre ;
     private String apellido;
     private String direccion;
-    private String estaTomando="Ningún medicamento actualmente";
+    private String estaTomando="Ningun medicamento actualmente";
     private int edad;
     private int dni;
     private HistorialMedico historial = new HistorialMedico();
@@ -33,11 +33,11 @@ public class Paciente {
     public void addMedicamento(Medicamento m)
     {
          misMedicamentos.add(m);
-         if(this.estaTomando.equals("Ningún medicamento actualmente"))
+         if(this.estaTomando.equals("Ningun medicamento actualmente"))
          {
              this.estaTomando="";
          }
-         this.estaTomando+="\n  "+m.getNombre();
+         this.estaTomando+=m.getNombre()+" ";
     }
     
     public String getNombre()
@@ -48,6 +48,11 @@ public class Paciente {
     public void setfdp(FormaDePago fdp)
     {
         mifdp = fdp;
+    }
+    
+    public FormaDePago getMiFdp()
+    {
+    	return mifdp;
     }
             
     public void setSelect()
@@ -110,6 +115,11 @@ public class Paciente {
     public void setAlergias(ArrayList<Medicamento> alergias) {
         this.alergias = alergias;
     }
+    
+    public void addAlergia(Medicamento m) {
+    	this.alergias.add(m);
+    }
+    
     public void unSelect()
     {
         this.esSelect = false;

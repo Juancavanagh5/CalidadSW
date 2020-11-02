@@ -48,21 +48,6 @@ public class PersonalAdmTest {
         t2 = new Turnos(p, d, "martes 21", "18:00");
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of registrarObserver method, of class PersonalAdm.
