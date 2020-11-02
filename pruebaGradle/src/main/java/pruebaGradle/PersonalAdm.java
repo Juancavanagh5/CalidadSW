@@ -89,7 +89,7 @@ public String getPassword()
     return this.password;
 }
 
-    private LinkedList<Turnos> getAllTurnos() {
+    public LinkedList<Turnos> getAllTurnos() {
         return allTurnos;
     }
 
