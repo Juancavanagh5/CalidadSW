@@ -12,23 +12,30 @@ plugins {
     id 'java'
     id 'eclipse'
     id 'application'
-//    id 'jacoco'
+    id 'jacoco'
 }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
-/*
-version = '1.2.1'
+
+//version = '1.2.1'
+
+apply plugin: 'jacoco'
 
 jacoco {
-    toolVersion = "0.8.5"
+    toolVersion = "0.8.6"
     reportsDir = file("$buildDir/customJacocoReportDir")
 }
 
-apply plugin: 'jacoco'
-*/
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -55,20 +62,28 @@ application {
     // Define the main class for the application.
     mainClassName = 'pruebaGradle.Main'
 }
-/*
+
 test {
     // Use junit platform for unit tests
     useJUnitPlatform()
        testLogging{
        events "passed", "skipped", "failed"
     }
-    jacoco {
+
+jacoco {
        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
        classDumpDir = file("$buildDir/jacoco/classpathdumps")
     }
 }
-*/
-/*
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
 jacocoTestCoverageVerification {
     violationRules {
         rule {
@@ -94,11 +109,11 @@ jacocoTestCoverageVerification {
 }
 
 check.dependsOn jacocoTestCoverageVerification
-*/
-/*
+
+
 jar{
      manifest{
          attributes 'Main-Class': 'pruebaGradle.Main'
      }
 }
-*/
+
