@@ -164,6 +164,76 @@ public class DoctorTest {
         String result = instance.getNombre();
         assertEquals(expResult, result);
     }
+    
+    
+    /**
+     * Test of selPaciente method, of class Doctor.
+     */
+    @Test
+    public void testSelPaciente() {
+        System.out.println("selPaciente");
+        Doctor instance = d1;
+        
+        Turnos t1 = new Turnos(p1, instance, "lunes 20", "10:35");
+        Turnos t2 = new Turnos(p2, instance, "martes 21", "18:00");
+        Turnos t3 = new Turnos(p3, instance, "martes 21", "14:00");
+        
+        pa.crearTurno(t1); 
+        pa.crearTurno(t2);
+        pa.crearTurno(t3);
+        
+        instance.selPaciente(1); //queda seleccionado el paciente p2
+        assertEquals(p2, instance.getPacienteSel());
+        
+        
+    }
+    
+    /**
+     * Test of selTurno method, of class Doctor.
+     */
+    @Test
+    public void testSelTurno() {
+        System.out.println("selTurno");
+        Doctor instance = d1;
+        
+        Turnos t1 = new Turnos(p1, instance, "lunes 20", "10:35");
+        Turnos t2 = new Turnos(p2, instance, "martes 21", "18:00");
+        Turnos t3 = new Turnos(p3, instance, "martes 21", "14:00");
+        
+        pa.crearTurno(t1); 
+        pa.crearTurno(t2);
+        pa.crearTurno(t3);
+        
+        instance.selTurno(2); //selecciono el turno t3
+        assertEquals(t3, instance.getTurnoSel());
+    }
+    
+    /**
+     * Test of quitarTurnoSel method, of class Doctor.
+     */
+    @Test
+    public void testQuitarTurnoSel() {
+        System.out.println("quitarTurnoSel");
+        Doctor instance = d1;
+        
+        Turnos t1 = new Turnos(p1, instance, "lunes 20", "10:35");
+        Turnos t2 = new Turnos(p2, instance, "martes 21", "18:00");
+        Turnos t3 = new Turnos(p3, instance, "martes 21", "14:00");
+        
+        pa.crearTurno(t1); 
+        pa.crearTurno(t2);
+        pa.crearTurno(t3);
+        
+        instance.selTurno(2); //selecciono el turno t3
+        assertEquals(t3, instance.getTurnoSel());
+        instance.QuitarTurnoSel();
+        
+        LinkedList <Turnos> exp = new LinkedList <Turnos>();
+        exp.add(t1); exp.add(t2);
+        assertEquals(exp, instance.getMisTurnos());
+        
+    }
+    
 
     /**
      * Test of getMisPacientes method, of class Doctor.

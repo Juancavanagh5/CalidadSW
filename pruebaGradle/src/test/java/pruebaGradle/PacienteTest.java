@@ -70,15 +70,38 @@ public class PacienteTest {
     
     
     /**
-     * Test of getApellido method, of class Paciente.
+     * Test of setApellido method, of class Paciente.
      */
     @Test
-    public void testGetApellido() {
-    	System.out.println("getApellido");
+    public void testSetApellido() {
+    	System.out.println("setApellido");
     	Paciente instance = p;
-    	assertEquals("Algorry", instance.getApellido());
+    	instance.setApellido("nuevoApellido");
+    	assertEquals("nuevoApellido", instance.getApellido());
     }
     
+    /**
+     * Test of setSelect method, of class Paciente.
+     */
+    @Test
+    public void testSetSelect() {
+    	System.out.println("setSelect");
+    	Paciente instance = p;
+    	assertEquals(false, instance.EsSelect()); //por defecto es false
+    	instance.setSelect(); //lo pone en true
+    	assertEquals(true, instance.EsSelect());
+    }
+    
+    /**
+     * Test of setEstaTomando method, of class Paciente.
+     */
+    @Test
+    public void testSetEstaTomando() {
+    	System.out.println("setEstaTomando");
+    	Paciente instance = p;
+    	instance.setEstaTomando("cree que Supritos pero no esta seguro");
+    	assertEquals("cree que Supritos pero no esta seguro", instance.getEstaTomando());
+    }
     
     /**
      * Test of getEstaTomando method, of class Paciente.
@@ -115,6 +138,17 @@ public class PacienteTest {
     	Paciente instance = p;
     	instance.setDireccion("Nueva direccion 325");
     	assertEquals("Nueva direccion 325", instance.getDireccion());
+    }
+    
+    /**
+     * Test of setEdad method, of class Paciente.
+     */
+    @Test
+    public void testSetEdad() {
+    	System.out.println("setEdad");
+    	Paciente instance = p;
+    	instance.setEdad(54);
+    	assertEquals(54, instance.getEdad());
     }
     
     
@@ -193,6 +227,34 @@ public class PacienteTest {
         instance.addAlergia(penicilina); instance.addAlergia(corticoides);
         ArrayList<Medicamento> result = instance.getAlergias();
         assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of setAlergias method, of class Paciente.
+     */
+    @Test
+    public void testSetAlergias() {
+        System.out.println("getAlergias");
+        Paciente instance = p;
+        ArrayList<Medicamento> array = new ArrayList <Medicamento>();
+        array.add(penicilina); array.add(corticoides);
+        instance.setAlergias(array);
+        ArrayList<Medicamento> result = instance.getAlergias();
+        assertEquals(array, result);
+    }
+    
+    /**
+     * Test of setDeuda method, of class Paciente.
+     */
+    @Test
+    public void testSetDeuda() {
+        System.out.println("setDeuda");
+        Paciente instance = p;
+        instance.setDeuda(true);
+        assertEquals(true, instance.getDeuda());
+        
+        instance.setDeuda(false);
+        assertEquals(false, instance.getDeuda());
     }
 
     /**

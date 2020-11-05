@@ -30,10 +30,10 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Joaquin Funes
+ * @author Joaquin Funes 
  */
 public class PersonalAdmTest {
-    private Doctor d;
+    private Doctor d, d2;
     private Paciente p;
     private PersonalAdm pa;
     private FormaDePago fdp;
@@ -283,7 +283,65 @@ public class PersonalAdmTest {
         String result = instance.getPassword();
         assertEquals(expResult, result);
     }
+    
+    
+    /**
+     * Test of verTurnos method, of class PersonalAdm.
+     */
+    @Test
+    public void testVerTurnos() {
+        System.out.println("verTurnos");
+        PersonalAdm instance = pa;
+        LinkedList <Turnos> exp = new LinkedList <Turnos> ();
+        exp.add(t);
+        exp.add(t2);
+        instance.crearTurno(t);
+        instance.crearTurno(t2);
+        assertEquals(exp, instance.verTurnos());
+    }
+    
+    
+    /**
+     * Test of SelPaciente method, of class PersonalAdm.
+     */
+    @Test
+    public void testSelPaciente() {
+        System.out.println("SelPaciente");
+        PersonalAdm instance = pa;
+        instance.crearPaciente("Carlitos", "Tevez", "Fuerte Apache 10", 36, 15145789);
+        instance.crearPaciente("Juan Roman", "Riquelme", "Don Torcuato 10", 41, 13145785);
+        instance.SelPaciente(0);
+        assertEquals(15145789, instance.getPacienteSel().getDni());
+        
+    }
+    
 
+    /**
+     * Test of getDoctor method, of class PersonalAdm.
+     */
+    @Test
+    public void testGetDoctor() {
+        System.out.println("getDoctor");
+        PersonalAdm instance = pa;
+        Doctor d2 = new Doctor("Orlando", "userOrlando", "qwerty", pa);
+        Doctor d3 = new Doctor("Luis", "userLuis", "qwe", pa);
+        assertEquals(d3,instance.getDoctor("Luis"));
+    }
+    
+    
+    /**
+     * Test of SelDoctor method, of class PersonalAdm.
+     */
+    @Test
+    public void testSelDoctor() {
+        System.out.println("SelDoctor");
+        PersonalAdm instance = pa;
+        Doctor d2 = new Doctor("Orlando", "userOrlando", "qwerty", pa);
+        Doctor d3 = new Doctor("Luis", "userLuis", "qwe", pa);
+        Doctor d4 = new Doctor("Gimena", "userGimena", "asdfg", pa);
+        pa.SelDoctor("userLuis");
+        assertEquals(d3,instance.getDoctorSel());
+    }
     
 }
 

@@ -181,8 +181,7 @@ public Paciente getPaciente(int dni)
              }
          }
      }
-     
-     
+      
 
 }
 
