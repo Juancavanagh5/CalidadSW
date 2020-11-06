@@ -23,7 +23,7 @@ public Doctor(String n, String m, String pass, PersonalAdm pa)
 {
     nombre = n;
     this.user = m;
-    this.password = pass
+    this.password = pass;
     persAdm = pa;
     persAdm.registrarObserver(this);  //me registro como observador a PersonalAdm
 }
