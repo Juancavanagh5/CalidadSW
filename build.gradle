@@ -13,6 +13,7 @@ plugins {
     id 'eclipse'
     id 'application'
     id 'jacoco'
+    id 'checkstyle'
 }
 
 java {
@@ -111,10 +112,21 @@ jacocoTestCoverageVerification {
 
 check.dependsOn jacocoTestCoverageVerification
 
+checkstyle {
+    ignoreFailures = true
+    toolVersion = '6.7'
+    configFile file("config/checkstyle/checkstyle.xml")
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
 
 jar{
      manifest{
          attributes 'Main-Class': 'pruebaGradle.Main'
      }
 }
-

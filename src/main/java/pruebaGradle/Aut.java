@@ -92,7 +92,7 @@ public class Aut extends javax.swing.JFrame {
         PassText.setBounds(420, 340, 160, 23);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("ContraseÃ±a");
+        jLabel2.setText("Contraseña");
         jPanel3.add(jLabel2);
         jLabel2.setBounds(340, 330, 70, 40);
 
@@ -134,7 +134,7 @@ public class Aut extends javax.swing.JFrame {
         jLabel7.setBounds(400, 310, 14, 17);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("ContraseÃ±a del nuevo usuario");
+        jLabel8.setText("Contraseña del nuevo usuario");
         jPanel4.add(jLabel8);
         jLabel8.setBounds(230, 340, 190, 17);
 
@@ -166,7 +166,7 @@ public class Aut extends javax.swing.JFrame {
         PassGes.setBounds(430, 370, 160, 23);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("ContraseÃ±a del Gestor");
+        jLabel10.setText("Contraseña del Gestor");
         jPanel4.add(jLabel10);
         jLabel10.setBounds(280, 370, 135, 20);
 
@@ -174,7 +174,7 @@ public class Aut extends javax.swing.JFrame {
         jPanel4.add(jLabel9);
         jLabel9.setBounds(0, 0, 990, 770);
 
-        jTabbedPane3.addTab("GestiÃ³n de Usuarios", jPanel4);
+        jTabbedPane3.addTab("Gestión de Usuarios", jPanel4);
 
         getContentPane().add(jTabbedPane3);
         jTabbedPane3.setBounds(0, 0, 1000, 800);
@@ -186,7 +186,8 @@ public class Aut extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_PassTextActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    @SuppressWarnings("unlikely-arg-type")
+	private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String a="";
         String pass;
         boolean correcto = false; 
@@ -376,4 +377,3 @@ public class Aut extends javax.swing.JFrame {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-
