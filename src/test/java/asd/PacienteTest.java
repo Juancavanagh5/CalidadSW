@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
  *
  * @author usuario
  */
-@SuppressWarnings("unused")
+/*@SuppressWarnings("unused")
 public class PacienteTest {
     private Medicamento penicilina;
     private Medicamento corticoides;
@@ -43,7 +43,7 @@ public class PacienteTest {
     /**
      * Test of getEdad method, of class Paciente.
      */
-    @Test
+    /*@Test
     public void testGetEdad() {
     	System.out.println("getEdad");
     	Paciente instance = p;
@@ -54,7 +54,7 @@ public class PacienteTest {
     /**
      * Test of getDni method, of class Paciente.
      */
-    @Test
+    /*@Test
     public void testGetDni() {
     	System.out.println("getDni");
     	Paciente instance = p;
@@ -65,7 +65,7 @@ public class PacienteTest {
     /**
      * Test of getNombre method, of class Paciente.
      */
-    @Test
+    /*@Test
     public void testGetNombre() {
     	System.out.println("getNombre");
     	Paciente instance = p;
@@ -76,7 +76,7 @@ public class PacienteTest {
     /**
      * Test of setApellido method, of class Paciente.
      */
-    @Test
+    /*@Test
     public void testSetApellido() {
     	System.out.println("setApellido");
     	Paciente instance = p;

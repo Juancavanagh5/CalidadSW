@@ -243,7 +243,7 @@ public class DoctorTest {
     /**
      * Test of getMisPacientes method, of class Doctor.
      */
-    @Test
+    /*@Test
     public void testGetMisPacientes() {
         System.out.println("getMisPacientes");
         Doctor doc1 = d1;
