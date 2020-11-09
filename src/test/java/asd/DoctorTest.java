@@ -174,7 +174,7 @@ public class DoctorTest {
     /**
      * Test of selPaciente method, of class Doctor.
      */
-    @Test
+    /*@Test
     public void testSelPaciente() {
         System.out.println("selPaciente");
         Doctor instance = d1;
@@ -196,7 +196,7 @@ public class DoctorTest {
     /**
      * Test of selTurno method, of class Doctor.
      */
-    @Test
+    /*@Test
     public void testSelTurno() {
         System.out.println("selTurno");
         Doctor instance = d1;
@@ -216,7 +216,7 @@ public class DoctorTest {
     /**
      * Test of quitarTurnoSel method, of class Doctor.
      */
-    @Test
+    /*@Test
     public void testQuitarTurnoSel() {
         System.out.println("quitarTurnoSel");
         Doctor instance = d1;
