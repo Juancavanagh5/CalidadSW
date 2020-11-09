@@ -13,7 +13,7 @@ public class Main {
 		Doctor d1 = new Doctor("Martin", "docmartin", "1234", usuario);
         @SuppressWarnings("unused")
 		Doctor d2 = new Doctor("Federico", "docfederico", "4321", usuario);
-        Aut Abrir = new Aut(usuario);
+                Aut Abrir = new Aut(usuario);
         Abrir.setVisible(true);
         Abrir.setLocationRelativeTo(null);
         @SuppressWarnings("unused")
